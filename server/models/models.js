@@ -61,7 +61,7 @@ const Order = sequelize.define('order', {
 const OrderStatus = sequelize.define('order_status', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     full_date: {type: DataTypes.DATE, allowNull: false},
-    status: {type: DataTypes.STRING, allowNull: false}
+    status: {type: DataTypes.STRING, allowNull: false, defaultValue: 'Логистика'}
 })
 
 const Country = sequelize.define('country', {
