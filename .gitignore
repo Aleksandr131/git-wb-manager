@@ -1,3 +1,4 @@
 .idea
 
 /server/node_modules
+/scrapper/node_modules
