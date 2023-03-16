@@ -106,8 +106,8 @@ Subject.belongsTo(Category)
 Stock.hasMany(Order)
 Order.belongsTo(Stock)
 
-Order.hasMany(ProductPrice)
-ProductPrice.belongsTo(Order)
+Order.hasMany(Product)
+Product.belongsTo(Order)
 
 Order.hasMany(OrderStatus)
 OrderStatus.belongsTo(Order)
