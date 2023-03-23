@@ -44,11 +44,6 @@ export const fetchPrice = async (quantity = 1) => {
 //     }
 // }
 //
-// const params = {
-//     dateFrom: '2023-03-14',
-//     flag: 1
-// }
-//
 // await fetchOrders(params).then(data =>
 //     parseData(data)
 // ).catch(err =>
