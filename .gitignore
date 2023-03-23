@@ -1,4 +1,5 @@
 .idea
+/server/.env
 /scrapper/.env
 
 /server/node_modules
