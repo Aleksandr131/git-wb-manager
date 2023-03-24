@@ -1,6 +1,5 @@
-import {config} from 'dotenv'
-config()
-import axios from 'axios'
+require('dotenv').config()
+const axios = require('axios')
 
 const $authHostStatistics = axios.create({
     baseURL: process.env.STATISTICS_APP_API_URL
@@ -23,7 +22,7 @@ const authInterceptorStandard = config => {
 $authHostStatistics.interceptors.request.use(authInterceptorStatistics)
 $authHostStandard.interceptors.request.use(authInterceptorStandard)
 
-export {
+module.exports = {
     $authHostStatistics,
     $authHostStandard
 }
