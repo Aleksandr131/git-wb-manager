@@ -88,7 +88,7 @@ const SubjectBrand = sequelize.define('subject_brand', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
 })
 
-Product.hasMany(ProductInfo)
+Product.hasMany(ProductInfo, {as: 'info'})
 ProductInfo.belongsTo(Product)
 
 Product.hasMany(ProductPrice)
